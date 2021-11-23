@@ -5,7 +5,10 @@ body,
 }
 
 body {
-  background-color: hsl(180deg, 25%, 92%);
+  --back-color: hsl(180deg, 25%, 92%);
+  --fore-color: hsl(195deg, 20%, 86%);
+  background: linear-gradient(to bottom, var(--back-color) 0vh,var(--back-color) 50vh,var(--fore-color) 50vh,var(--fore-color) 50vh,var(--fore-color) 100vh);
+  background-attachment: fixed;
   margin: 0;
 }
 
